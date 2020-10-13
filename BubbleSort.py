@@ -5,6 +5,7 @@ def bubble_sort(a):
                 a[j], a[j-1] = a[j-1], a[j]
     print(a)
 
+
 a = []
 for i in range(6):
     a.append(input())
