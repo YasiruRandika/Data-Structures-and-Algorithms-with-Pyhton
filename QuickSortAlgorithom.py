@@ -1,12 +1,11 @@
-array = []
-
-for i in range(7):
-    array.append(int(input('Enter a number : ')))
-
-
 # Partition
+# a - array list
+# p - start index
+# r - last index
 def partition(a, p, r):
     i = p - 1  # index of smaller element
+
+    # We take the last element of the array as the pivot
     x = a[r]  # pivot
 
     for j in range(p, r):
@@ -24,6 +23,11 @@ def quickSort(a, p, r):
         quickSort(a, p, q - 1)
         quickSort(a, q + 1, r)
 
+
+array = []
+
+for i in range(7):
+    array.append(int(input('Enter a number : ')))
 
 quickSort(array, 0, len(array) - 1)
 
