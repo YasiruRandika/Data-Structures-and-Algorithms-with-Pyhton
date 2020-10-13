@@ -13,12 +13,11 @@ def insertSort(A):
 
 A = []
 
-for i in range(6):
+for i in range(10):
     A.append(int(input('Enter a number : ')))
 
 insertSort(A)
 
-print("Sorted Array")
+print("\nSorted Array")
 
-for k in range(len(A)):
-    print(A[k])
+print(A)
